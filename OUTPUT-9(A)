@@ -1,0 +1,37 @@
+Call:
+lm(formula = y ~ x)
+
+Coefficients:
+(Intercept)            x  
+   47.50833      0.07276  
+
+> #Getting summary of Relationship Model
+> print(summary(relationship_mode1))
+
+Call:
+lm(formula = y ~ x)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-38.948  -7.390   1.869  15.933  34.087 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 47.50833   55.18118   0.861    0.414
+x            0.07276    0.39342   0.185    0.858
+
+Residual standard error: 25.96 on 8 degrees of freedom
+Multiple R-squared:  0.004257,	Adjusted R-squared:  -0.1202 
+F-statistic: 0.0342 on 1 and 8 DF,  p-value: 0.8579
+
+> #Giving a name to the chart file
+> png(file="linear_regression.png")
+> #Plotting the chart
+> plot(x,y,col="red",
++      main="Height and Weight Regression",
++      abline(lm(y~x)),cex=1.3,pch=16,
++      xlab="Weight in Kg",ylab="Height in cm")
+> #Saving the file
+> dev.off()
+RStudioGD 
+        2 
