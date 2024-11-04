@@ -1,0 +1,15 @@
+> #Creating input data
+> input<-mtcars[,c("mpg","wt","disp","hp")]
+> #Creating the relationship model
+> Model<-lm(mpg~wt+disp+hp,data=input)
+> #Showing the model
+> print(Model)
+
+Call:
+lm(formula = mpg ~ wt + disp + hp, data = input)
+
+Coefficients:
+(Intercept)           wt         disp           hp  
+  37.105505    -3.800891    -0.000937    -0.031157  
+
+>
