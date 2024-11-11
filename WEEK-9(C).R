@@ -19,7 +19,7 @@ confusion
 
 #Model Accuracy
 #adding diagonal elements in the confusion matrix
-Accuracy<sum(diag(confusion))/sum(confusion)
+Accuracy<-sum(diag(confusion))/sum(confusion)
 Accuracy
 
 ##ROC Curve
