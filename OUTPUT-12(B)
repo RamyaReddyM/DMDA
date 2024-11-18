@@ -1,0 +1,13 @@
+> x<-c(0.593,0.142,0.329,0.691,0.231,0.793,0.519,0.392,0.418)
+> t.test(x,alternative="greater",mu=0.3)
+
+	One Sample t-test
+
+data:  x
+t = 2.2051, df = 8, p-value = 0.02927
+alternative hypothesis: true mean is greater than 0.3
+95 percent confidence interval:
+ 0.3245133       Inf
+sample estimates:
+mean of x 
+0.4564444 
